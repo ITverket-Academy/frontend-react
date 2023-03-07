@@ -1,0 +1,21 @@
+   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0.698 0.909 1012.874 185.45">
+              <linearGradient
+                id="a"
+                gradientUnits="userSpaceOnUse"
+                x1="-2139.105"
+                y1="764.099"
+                x2="-2138.106"
+                y2="764.099"
+                gradientTransform="rotate(-120 -269773.641 -49189.267) scale(209.1985)"
+              >
+                <stop offset="0" stop-color="#2a9d8f" />
+                <stop offset=".375" stop-color="#2fae9f" />
+                <stop offset=".949" stop-color="#32baaa" />
+                <stop offset=".949" stop-color="#35c6b5" />
+                <stop offset="1" stop-color="#52d1c1" />
+              </linearGradient>
+              <path
+                d="M23.887 32.818C8.06 32.818-.079 76.035.769 116.61c-.022-.006-.049.006-.071 0 .846 35.613 8.722 69.748 24.333 69.748 59.911 0 128.171-56.498 128.171-76.752 0-5.066-5.161-14.815-12.077-22.511-.01.005-.027-.005-.036 0-.471-.546-.969-1.09-1.465-1.644-21.342-23.812-65.618-52.633-115.737-52.633z"
+                fill="url(#a)"
+              />
+</svg>

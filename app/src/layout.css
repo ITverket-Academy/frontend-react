@@ -1,0 +1,155 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --black: #1a1a1a;
+  --white: #fff;
+  --gray: #efeff0;
+  --gray-dark: #66676e;
+  --gray-faded: #d0d1d3;
+  --orange: #fdbe34;
+
+  --space-1: 8px;
+  --space-2: 12px;
+  --space-3: 16px;
+  --space-4: 20px;
+  --space-5: 24px;
+
+  --font-smallest: 0.75rem;
+  --font-small: 0.875rem;
+  --font-default: 1rem;
+  --font-big: 1.25rem;
+  --font-biggest: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1.75rem;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+body {
+  font-family: "Lato";
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.title {
+  font-size: var(--font-biggest);
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: var(--font-default);
+  font-weight: 700;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-semi-bold {
+  font-weight: 600;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.main {
+  margin-top: var(--space-5) !important;
+}
+
+.container {
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.list-unstyled {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.mt-1 {
+  margin-top: var(--space-1);
+}
+
+.mt-2 {
+  margin-top: var(--space-2);
+}
+
+.mb-2 {
+  margin-bottom: var(--space-2);
+}
+
+.black-button {
+  font-family: "Lato";
+  background-color: var(--black);
+  color: var(--white);
+  border: none;
+  padding: 8px 16px;
+  font-size: var(--font-default);
+  cursor: pointer;
+  font-weight: 700;
+  width: 100%;
+  min-height: 48px;
+  text-align: center;
+}
+
+.black-button:hover {
+  background-color: var(--gray-dark);
+}
+
+.black-link {
+  text-decoration: none;
+  height: 28px;
+  display: flex;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  min-height: initial;
+}
+
+.text-button {
+  background-color: transparent;
+  color: var(--black);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}

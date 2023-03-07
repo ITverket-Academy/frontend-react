@@ -1,0 +1,29 @@
+{
+  "name": "studentprosjekt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "initRoot": "npm install",
+    "initApp": "cd app && npm install",
+    "initServer": "cd api && npm install",
+    "initFasit": "cd fasit && npm install",
+    "initProject": "npm run initRoot && npm run initApp && npm run initServer && npm run initFasit",
+    "app": "cd app && npm run dev",
+    "server": "cd api && node app.js",
+    "fasit": "cd fasit && npm run dev",
+    "start": "concurrently \"npm run app\" \"npm run server\" \"npm run fasit\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmarTrebinjac/studentprosjekt.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmarTrebinjac/studentprosjekt/issues"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
