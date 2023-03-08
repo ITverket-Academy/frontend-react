@@ -47,23 +47,23 @@ const ProductPage = () => {
     queryFn: () => getProduct(params.productId),
   });
 
+  useEffect(() => {
+    // ⚒️ Sett tittelen til tabben vår til navnet på produktet ved å bruke useTitle-hooken vår.
+
+    // ⚒️ Sørg for at denne kun kjøres når produktet er lastet inn.
+  }, []);
+
   if (isLoading) return <h1>Loading...</h1>;
   if (isError) return <h1>An error occured...</h1>;
   // ⚒️ Lag en return case i tilfellet vi ikke finner produktet.
-
-  useEffect(() => {
-    // ⚒️ Sett tittelen til tabben vår til navnet på produktet ved å bruke useTitle-hooken vår.
-    
-    // ⚒️ Sørg for at denne kun kjøres når produktet er lastet inn.
-  }, []);
 
   const addToCart = () => {
     // ⚒️ Hvis brukeren ikke har valgt en størrelse, vil vi ikke kjøre resten av logikken i denne funksjonen.
 
     // ⚒️ Se om produktet allerede ligger i handlekurven.
-    
+
     // ⚒️ Hvis produktet ligger i kurven, oppdaterer vi antall, hvis ikke, legger vi det til.
-    
+
     // ⚒️ Oppdater handlekurven med den nye listen.
   };
 
@@ -71,14 +71,14 @@ const ProductPage = () => {
     <main className="main container">
       <div className="product-page-row">
         {/*🧹 Fjern kommentaren under når du har klart å hente produktet. */}
-        {/* <img className="product-page-img" src={product.image} /> */}
+        {/* <img className="product-page-img" src={dataimage} /> */}
         <div>
           {/*🧹 Fjern kommentaren under når du har klart å hente produktet. */}
           {/* <div>
-            <h1 className="title font-normal">{product.name}</h1>
-            <h2 className="title">{product.details}</h2>
+            <h1 className="title font-normal">{dataname}</h1>
+            <h2 className="title">{datadetails}</h2>
             <h3 className="subtitle">
-              {product.price} kr <span className="font-light">inkl. mva.</span>
+              {dataprice} kr <span className="font-light">inkl. mva.</span>
             </h3>
           </div> */}
           <div className="product-button-container">

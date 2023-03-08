@@ -20,7 +20,7 @@ const SearchPage = () => {
   // Vi blir nødt til å filtrere ut produkter som brukeren ikke har søkt etter, og derfor trenger vi å lage en funksjon
   // som skal gjøre dette arbeidet.
   const filteredItems = (): Product[] => {
-    // Det er viktig å passe på at vi ikke filtrer bort ting pga. av stor eller liten bokstav i navnet,
+    // Det er viktig å passe på at vi ikke filtrer bort ting pga. stor eller liten bokstav i navnet,
     // så vi gjør om  hele søket til lower case og splitter hvert ord for seg selv, slik at vi får en
     // array av søkeord. Dette fordi vi søker på hvert enkelt ord, og om noen av ordene matcher,
     // så vil vi returnere dette produktet i resultatet.
